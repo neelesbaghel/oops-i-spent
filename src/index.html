@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <section id="login-section">
+    <div class="login-card">
+      <h1>Expense Tracker</h1>
+      <p>Login to continue</p>
+
+      <form onsubmit="login(event)">
+        <input type="text" required placeholder="Username" />
+        <input type="password" required placeholder="Password" />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function login(e) {
+      e.preventDefault();
+      // redirect to dashboard page
+      window.location.href = "dashboard.html";
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
